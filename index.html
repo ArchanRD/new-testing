@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archan's Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    hr {
+        width: 70%;
+    }
+</style>
+
+
+
+<body>
+    <header class="container">
+        <div class="left">
+            <a href="index.html">
+                <p class="archan">Archan</p>
+            </a>
+        </div>
+
+        <div class="nav-mid">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="blog.html">
+                    <li>Blog</li>
+                </a>
+                <a href="aboutus.html">
+                    <li>About</li>
+                </a>
+
+            </ul>
+        </div>
+        <div id="reach-me">
+            <a href="contactus.html"><button> Reach Me</button></a>
+        </div>
+        <div class="smid">
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+            <ul id="menuList">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contactus.html">Reach</a>
+            </ul>
+
+        </div>
+
+
+    </header>
+
+    <!-- <img src="profile.jpg" alt="image" class="profile"> -->
+
+    <div class="heading">
+
+        <img src="Archan2.jpg" alt="image">
+        <p>Hi!, My name is <b>Archan</b> and I m a student studying <b>Diploma in CE</b>. I am just new to the web development and learned basics of web development. This is my second Website made using <b>HTML</b> and <b>CSS</b>. If you want to know more
+            about me, you can check <b>"ABOUT US"</b> in the navigation bar.</p>
+        <p>You can suggest me some awesome Website Design on my <b><a href="https://www.instagram.com/archan_92/">Instagram.</a></b><br>It would help me a lot to improve my Website</p>
+        <hr>
+
+    </div>
+
+
+    <script>
+        let menuList = document.getElementById("menuList");
+        menuList.style.display = "none";
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "150px"
+                menuList.style.display = "flex";
+                menuList.style.width = "99%";
+
+
+            } else {
+                menuList.style.maxHeight = "0px"
+                menuList.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
