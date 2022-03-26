@@ -260,7 +260,6 @@ body {
 
 .about {
     background-color: black;
-    height: 500px;
     color: rgb(236, 236, 236);
     font-family: "google";
     text-align: center;
@@ -297,7 +296,6 @@ body {
     font-size: 25px;
     font-family: "google";
     cursor: pointer;
-    margin: 40px;
 }
 
 .about a {
@@ -493,7 +491,9 @@ body {
         flex-direction: column;
     }
 
-
+    .socials{
+        margin: 10px auto;
+    }
  
     .grass {
         width: 100%;
