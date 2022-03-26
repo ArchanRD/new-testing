@@ -144,7 +144,13 @@ body {
 .discount {
     text-align: center;
     font-family: 'google';
-    background-color: #f3f3f3;
+    font-size: 28px;
+}
+.red{
+    color: red;
+}
+.bg-txt{
+    font-size: 35px;
 }
 
 .plants {
