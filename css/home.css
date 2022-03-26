@@ -297,7 +297,6 @@ body {
     font-size: 25px;
     font-family: "google";
     cursor: pointer;
-    margin: 40px;
 }
 
 .about a {
@@ -492,7 +491,9 @@ body {
     .content {
         flex-direction: column;
     }
-
+    .socials{
+        margin: 10px auto;
+    }
 
  
     .grass {
