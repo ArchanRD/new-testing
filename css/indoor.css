@@ -3,71 +3,88 @@
     src: url(../fonts/ProductSans-Medium.ttf);
 }
 
-*{
-    margin:0;
+@font-face {
+    font-family: pacifico;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     animation: fade 0.4s;
 }
+
 @keyframes fade {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
-    
+
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
 }
-.navbar .logo{
+
+.navbar .logo {
     display: flex;
     margin: auto 50px;
 }
-.navbar img{
+
+.navbar img {
     width: 100px;
     border-radius: 50%;
 }
-.navbar h1{
+
+.navbar h1 {
     font-family: "google";
     align-items: center;
     display: flex;
-    color:#252525;
+    color: #252525;
 }
-.navbar h2{
+
+.navbar h2 {
     font-family: "google";
     font-size: 35px;
     display: flex;
     align-items: center;
     margin: auto 50px;
 }
-.highlight{
-    color:#1b751b;
+
+.highlight {
+    color: #1b751b;
 }
-.card{
+
+.card {
     width: 370px;
     border-radius: 5px;
-    margin: 15px;
+    margin: 7px;
+    height: 500px;
     box-shadow: -1px -1px 32px -6px rgba(0, 0, 0, 0.424);
-} 
-.cards{
+}
+
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.container h1{
+
+.container h1 {
     text-align: center;
     font-family: "google";
     font-size: 40px;
     margin: 40px;
     display: block;
 }
-.container .card h2{
+
+.container .card h2 {
     font-family: "google";
     text-align: center;
     margin: 10px;
@@ -76,57 +93,86 @@ body{
 
 }
 
-.container .card p{
+.container .card p {
     font-family: "google";
     text-align: center;
     font-size: 17px;
     margin: 16px;
     color: #363636;
 }
-.card .card-img{
+
+.card .card-img {
     width: 370px;
     transition: 0.3s ease;
 }
 
-.card button{
-    margin:29px auto;
-    display: block;
-    font-size: 20px;
-    background-color: black;
-    font-family: "google";
-    color:white;
-    padding: 7px 12px;
-    border-radius: 4px;
-    border:2px solid black;
-    cursor: pointer;
-    transition: .2s ease;
+.container .card .branding {
+    font-family: 'pacifico';
+    text-align: center;
+    font-size: 27px;
+    margin: 20px auto;
+    color: #034809;
 }
 
-.card button:active{
-    transform: scale(1.09);
+.red {
+    color: red;
 }
-.card .card-img:hover{
-    filter: brightness(90%);
+
+.price {
+    display: flex;
+    margin: auto;
+    display: block;
 }
-@media (max-width: 425px){
-    .navbar img{
+
+.font-big {
+    font-size: 43px;
+}
+
+.margin {
+    margin: 5px;
+}
+
+.green-txt {
+    color: greenyellow;
+}
+
+.container .card .price-sm {
+    font-size: 25px;
+}
+
+.card-heading {
+    height: 150px;
+}
+
+.price-container {
+    height: 200px;
+}
+
+
+@media (max-width: 425px) {
+    .navbar img {
         width: 60px;
     }
-    .navbar h1{
+
+    .navbar h1 {
         font-size: 20px;
     }
-    .navbar .logo{
+
+    .navbar .logo {
         margin: auto 10px;
     }
-    .navbar h2{
+
+    .navbar h2 {
         font-size: 20px;
         width: 143px;
         margin: 8px;
     }
-    .card{
+
+    .card {
         width: 340px;
     }
-    .card .card-img{
+
+    .card .card-img {
         width: 340px;
     }
 
