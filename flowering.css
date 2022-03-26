@@ -1,0 +1,179 @@
+@font-face {
+    font-family: google;
+    src: url(../fonts/ProductSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: pacifico;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    animation: fade 0.4s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    display: flex;
+    margin: auto 50px;
+}
+
+.navbar img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.navbar h1 {
+    font-family: "google";
+    align-items: center;
+    display: flex;
+    color: #252525;
+}
+
+.navbar h2 {
+    font-family: "google";
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    margin: auto 50px;
+}
+
+.highlight {
+    color: #469720;
+}
+
+.card {
+    width: 370px;
+    border-radius: 5px;
+    margin: 7px;
+    height: 500px;
+    box-shadow: -1px -1px 32px -6px rgba(0, 0, 0, 0.424);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: "google";
+    font-size: 40px;
+    margin: 40px;
+    display: block;
+}
+
+.container .card h2 {
+    font-family: "google";
+    text-align: center;
+    margin: 10px;
+    color: #333333;
+    font-size: 30px;
+
+}
+
+.container .card p {
+    font-family: "google";
+    text-align: center;
+    font-size: 17px;
+    margin: 16px;
+    color: #363636;
+}
+
+.card .card-img {
+    width: 370px;
+    transition: 0.3s ease;
+}
+
+.container .card .branding {
+    font-family: 'pacifico';
+    text-align: center;
+    font-size: 27px;
+    margin: 20px auto;
+    color: #034809;
+}
+
+.red {
+    color: red;
+}
+
+.price {
+    display: flex;
+    margin: auto;
+    display: block;
+}
+
+.font-big {
+    font-size: 43px;
+}
+
+.margin {
+    margin: 5px;
+}
+
+.green-txt {
+    color: greenyellow;
+}
+
+.container .card .price-sm {
+    font-size: 25px;
+}
+
+.card-heading {
+    height: 150px;
+}
+
+.price-container {
+    height: 200px;
+}
+
+
+@media (max-width: 425px) {
+    .navbar img {
+        width: 60px;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .navbar .logo {
+        margin: auto 10px;
+    }
+
+    .navbar h2 {
+        font-size: 20px;
+        width: 143px;
+        margin: 8px;
+    }
+
+    .card {
+        width: 340px;
+    }
+
+    .card .card-img {
+        width: 340px;
+    }
+
+}
