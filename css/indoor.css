@@ -177,7 +177,7 @@ body {
     }
 
     .card .card-img {
-        width: 340px;
+        width: 100%;
     }
 
 }
